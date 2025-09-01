@@ -66,6 +66,21 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <16 18>;
         };
+
+        numpad {
+            bindings = <&mo 5>;
+            key-positions = <31 32>;
+        };
+
+        numpad2 {
+            bindings = <&mo 5>;
+            key-positions = <35 34>;
+        };
+
+        connectivity {
+            bindings = <&mo 4>;
+            key-positions = <31 35>;
+        };
     };
 
     behaviors {
@@ -115,7 +130,7 @@
 &kp Q             &kp W             &kp F              &kp P             &kp B        &kp J       &kp L              &kp U               &kp Y              &none
 &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left T LGUI  &kp G        &kp M       &hrm_right RGUI N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
 &kp X             &kp C             &kp D              &kp V             &kp Z        &kp K       &kp H              &kp COMMA           &kp DOT            &kp FSLH
-                                    &mo 1              &lt 2 ENTER       &lt 3 SPACE  &kp C_MUTE  &mo 1              &lt 2 BACKSPACE     &kp NUMBER_6
+                                    &mo 1              &lt 2 ENTER       &lt 3 SPACE  &kp C_MUTE  &mo 1              &lt 2 BACKSPACE     &kp EXCL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
