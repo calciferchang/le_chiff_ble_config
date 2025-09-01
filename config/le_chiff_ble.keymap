@@ -115,12 +115,21 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_1 {
+        layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
+&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
+                                      &trans           &trans             &trans  &trans  &trans              &trans               &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
+&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
+                                      &trans           &trans             &trans  &trans  &trans              &trans               &trans
             >;
         };
     };
