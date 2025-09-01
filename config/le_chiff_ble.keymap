@@ -26,13 +26,14 @@
             key-positions = <1 2>;
         };
 
-        left_par {
-            bindings = <&kp LPAR>;
+        semi {
+            bindings = <&kp SEMI>;
             key-positions = <12 13>;
+            timeout-ms = <25>;
         };
 
-        right_par {
-            bindings = <&kp RPAR>;
+        aptos {
+            bindings = <&kp APOS>;
             key-positions = <16 17>;
         };
 
@@ -54,6 +55,16 @@
         rshift {
             bindings = <&skq RSHIFT>;
             key-positions = <18 17>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <13 11>;
+        };
+
+        double_aptos {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <16 18>;
         };
     };
 
