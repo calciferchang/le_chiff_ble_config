@@ -114,21 +114,30 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_2 {
+        num {
             bindings = <
-&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
-&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
-&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
-                                      &trans           &trans             &trans  &trans  &trans              &trans               &trans
+&kp LS(EXCL)       &kp LS(AT)         &kp LS(POUND)       &kp LS(DLLR)       &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)        &kp LS(STAR)         &kp MINUS           &kp EQUAL
+&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left LCTRL N3  &hrm_left LGUI N4  &kp N5         &kp N6         &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&skq LS(LEFT_GUI)  &none              &none               &none              &none          &none          &none               &trans               &trans              &trans
+                                      &trans              &trans             &trans         &trans         &trans              &trans               &trans
             >;
         };
 
-        num {
+        sym {
             bindings = <
-&kp LS(EXCL)       &kp LS(AT)         &kp LS(POUND)    &kp LS(DLLR)       &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)        &kp LS(STAR)         &kp MINUS           &kp EQUAL
-&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &kp N5         &kp N6         &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
-&skq LS(LEFT_GUI)  &none              &none            &none              &none          &none          &none               &trans               &trans              &trans
-                                      &trans           &trans             &trans         &trans         &trans              &trans               &trans
+&trans                &kp LA(LBKT)         &kp LA(RBKT)          &kp LA(MINUS)        &trans     &trans    &kp RS(RA(MINUS))     &kp RA(RS(RBKT))       &kp RA(RS(LBKT))      &trans
+&hrm_left LGUI MINUS  &hrm_left LALT LPAR  &hrm_left LCTRL LBRC  &hrm_left LGUI LBKT  &kp GRAVE  &kp BSLH  &hrm_right RGUI RBKT  &hrm_right RCTRL RBRC  &hrm_right RALT RPAR  &hrm_right RGUI N0
+&trans                &trans               &trans                &trans               &trans     &trans    &trans                &trans                 &trans                &trans
+                                           &trans                &trans               &trans     &trans    &trans                &trans                 &trans
+            >;
+        };
+
+        template {
+            bindings = <
+&trans             &trans             &trans              &trans             &trans  &trans  &trans              &trans               &trans              &trans
+&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left LCTRL N3  &hrm_left LGUI N4  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&trans             &trans             &trans              &trans             &trans  &trans  &trans              &trans               &trans              &trans
+                                      &trans              &trans             &trans  &trans  &trans              &trans               &trans
             >;
         };
     };
