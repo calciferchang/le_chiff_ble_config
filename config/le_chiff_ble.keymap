@@ -134,10 +134,10 @@
 
         nav {
             bindings = <
-&kp HOME             &kp PG_UP            &kp PG_DN           &kp END               &trans  &trans  &trans              &trans               &trans              &trans
-&hrm_left LGUI LEFT  &hrm_left LALT DOWN  &hrm_left LCTRL UP  &hrm_left LGUI RIGHT  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
-&trans               &trans               &trans              &trans                &trans  &trans  &trans              &trans               &trans              &trans
-                                          &trans              &trans                &trans  &trans  &trans              &trans               &trans
+&kp HOME             &kp PG_UP            &kp PG_DN           &kp END               &trans         &kp F12  &kp F7              &kp F8               &kp F9              &none
+&hrm_left LGUI LEFT  &hrm_left LALT DOWN  &hrm_left LCTRL UP  &hrm_left LGUI RIGHT  &trans         &kp F11  &hrm_right RGUI F4  &hrm_right RCTRL F5  &hrm_right RALT F6  &hrm_right RGUI F6
+&kp LG(Z)            &kp LG(C)            &kp LG(X)           &kp LG(V)             &kp LS(LG(Z))  &kp F10  &kp F1              &kp F2               &kp F3              &none
+                                          &trans              &trans                &trans         &trans   &trans              &trans               &trans
             >;
         };
 
