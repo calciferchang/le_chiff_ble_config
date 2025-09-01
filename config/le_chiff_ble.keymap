@@ -68,17 +68,17 @@
         };
 
         numpad {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <31 32>;
         };
 
         numpad2 {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <35 34>;
         };
 
         connectivity {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <31 35>;
         };
     };
@@ -130,10 +130,19 @@
 &kp Q             &kp W             &kp F              &kp P             &kp B        &kp J       &kp L              &kp U               &kp Y              &none
 &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left T LGUI  &kp G        &kp M       &hrm_right RGUI N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
 &kp X             &kp C             &kp D              &kp V             &kp Z        &kp K       &kp H              &kp COMMA           &kp DOT            &kp FSLH
-                                    &mo 1              &lt 2 ENTER       &lt 3 SPACE  &kp C_MUTE  &mo 1              &lt 2 BACKSPACE     &kp EXCL
+                                    &mo 2              &lt 3 ENTER       &lt 4 SPACE  &kp C_MUTE  &mo 2              &lt 3 BACKSPACE     &kp EXCL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        gaming {
+            bindings = <
+&kp T      &kp Q  &kp W  &kp E  &kp R      &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp A  &kp S  &kp D  &kp F      &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp Z  &kp X  &kp C  &kp V      &trans  &trans  &trans  &trans  &trans
+                  &mo 5  &mo 6  &kp SPACE  &trans  &trans  &trans  &trans
+            >;
         };
 
         num {
@@ -165,7 +174,7 @@
 
         media {
             bindings = <
-&bootloader    &tog 6         &none          &none          &bt BT_CLR     &none  &none         &none            &none             &none
+&bootloader    &tog 1         &none          &none          &bt BT_CLR     &none  &none         &none            &none             &none
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE  &kp C_NEXT
 &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none  &none         &none            &none             &none
                               &none          &none          &none          &none  &none         &none            &none
@@ -178,15 +187,6 @@
 &hrm_left LEFT_GUI PERIOD  &hrm_left LALT NUMBER_4  &hrm_left LCTRL N5  &hrm_left LEFT_GUI N6  &kp MINUS     &kp MINUS     &kp N4  &kp N5  &kp N6  &kp DOT
 &kp N0                     &kp N1                   &kp N2              &kp N3                 &kp FSLH      &kp FSLH      &kp N1  &kp N2  &kp N3  &kp N0
                                                     &trans              &trans                 &trans        &trans        &trans  &trans  &trans
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp T      &kp Q  &kp W  &kp E  &kp R      &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A  &kp S  &kp D  &kp F      &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z  &kp X  &kp C  &kp V      &trans  &trans  &trans  &trans  &trans
-                  &mo 4  &mo 5  &kp SPACE  &trans  &trans  &trans  &trans
             >;
         };
 
