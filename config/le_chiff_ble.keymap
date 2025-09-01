@@ -125,10 +125,19 @@
 
         sym {
             bindings = <
-&trans                &kp LA(LBKT)         &kp LA(RBKT)          &kp LA(MINUS)        &trans     &trans    &kp RS(RA(MINUS))     &kp RA(RS(RBKT))       &kp RA(RS(LBKT))      &trans
-&hrm_left LGUI MINUS  &hrm_left LALT LPAR  &hrm_left LCTRL LBRC  &hrm_left LGUI LBKT  &kp GRAVE  &kp BSLH  &hrm_right RGUI RBKT  &hrm_right RCTRL RBRC  &hrm_right RALT RPAR  &hrm_right RGUI N0
-&trans                &trans               &trans                &trans               &trans     &trans    &trans                &trans                 &trans                &trans
-                                           &trans                &trans               &trans     &trans    &trans                &trans                 &trans
+&trans             &kp LA(LBKT)         &kp LA(RBKT)          &kp LA(MINUS)        &trans     &trans    &kp RS(RA(MINUS))     &kp RA(RS(RBKT))       &kp RA(RS(LBKT))      &trans
+&hrm_left LGUI LT  &hrm_left LALT LPAR  &hrm_left LCTRL LBRC  &hrm_left LGUI LBKT  &kp GRAVE  &kp BSLH  &hrm_right RGUI RBKT  &hrm_right RCTRL RBRC  &hrm_right RALT RPAR  &hrm_right RGUI GREATER_THAN
+&kp MINUS          &trans               &trans                &trans               &trans     &trans    &trans                &trans                 &trans                &kp EQUAL
+                                        &trans                &trans               &trans     &trans    &trans                &trans                 &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&kp HOME             &kp PG_UP            &kp PG_DN           &kp END               &trans  &trans  &trans              &trans               &trans              &trans
+&hrm_left LGUI LEFT  &hrm_left LALT DOWN  &hrm_left LCTRL UP  &hrm_left LGUI RIGHT  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&trans               &trans               &trans              &trans                &trans  &trans  &trans              &trans               &trans              &trans
+                                          &trans              &trans                &trans  &trans  &trans              &trans               &trans
             >;
         };
 
