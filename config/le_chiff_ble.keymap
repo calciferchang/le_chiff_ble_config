@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 // makes it possible to hold backspace
 
@@ -92,7 +91,7 @@
         skq: stickykey_quickrelease {
             compatible = "zmk,behavior-sticky-key";
             label = "stickykey_quickrelease";
-            bindings = <&mkp>;
+            bindings = <&kp>;
             #binding-cells = <1>;
             release-after-ms = <1000>;
             quick-release;
@@ -126,10 +125,10 @@
 
         num {
             bindings = <
-&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
-&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &trans  &trans  &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
-&trans             &trans             &trans           &trans             &trans  &trans  &trans              &trans               &trans              &trans
-                                      &trans           &trans             &trans  &trans  &trans              &trans               &trans
+&kp LS(EXCL)       &kp LS(AT)         &kp LS(POUND)    &kp LS(DLLR)       &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(AMPS)        &kp LS(STAR)         &kp MINUS           &kp EQUAL
+&hrm_left LGUI N1  &hrm_left LALT N2  &hrm_left N3 N3  &hrm_left LGUI N4  &kp N5         &kp N6         &hrm_right RGUI N7  &hrm_right RCTRL N8  &hrm_right RALT N9  &hrm_right RGUI N0
+&skq LS(LEFT_GUI)  &none              &none            &none              &none          &none          &none               &trans               &trans              &trans
+                                      &trans           &trans             &trans         &trans         &trans              &trans               &trans
             >;
         };
     };
