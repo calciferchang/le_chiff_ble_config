@@ -83,7 +83,7 @@ jobs:
           mkdir build/artifacts
           [ -f build/zephyr/zmk.uf2 ] && cp build/zephyr/zmk.uf2 "build/artifacts/${{ steps.variables.outputs.artifact-name }}.uf2"
       - name: Archive artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "${{ steps.variables.outputs.artifact-name }}"
           path: build/artifacts
