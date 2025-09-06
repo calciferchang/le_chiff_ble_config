@@ -92,7 +92,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 34 35 36>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
@@ -105,7 +105,7 @@
 
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
@@ -131,7 +131,7 @@
 &kp Q             &kp W             &kp F              &kp P                 &kp B        &kp J       &kp L              &kp U               &kp Y              &none
 &hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left LEFT_GUI T  &kp G        &kp M       &hrm_right RGUI N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
 &kp X             &kp C             &kp D              &kp V                 &kp Z        &kp K       &kp H              &kp COMMA           &kp DOT            &kp FSLH
-                                    &mo 2              &lt 3 ENTER           &lt 4 SPACE  &kp C_MUTE  &mo 2              &lt 3 BACKSPACE     &kp EXCL
+                                    &mo 2              &lt 4 ENTER           &lt 3 SPACE  &kp C_MUTE  &mo 2              &lt 3 BACKSPACE     &kp EXCL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
