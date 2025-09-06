@@ -127,10 +127,10 @@
         default {
             label = "base";
             bindings = <
-&kp Q             &kp W             &kp F              &kp P             &kp B        &kp J       &kp L              &kp U               &kp Y              &none
-&hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left T LGUI  &kp G        &kp M       &hrm_right RGUI N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
-&kp X             &kp C             &kp D              &kp V             &kp Z        &kp K       &kp H              &kp COMMA           &kp DOT            &kp FSLH
-                                    &mo 2              &lt 3 ENTER       &lt 4 SPACE  &kp C_MUTE  &mo 2              &lt 3 BACKSPACE     &kp EXCL
+&kp Q             &kp W             &kp F              &kp P                 &kp B        &kp J       &kp L              &kp U               &kp Y              &none
+&hrm_left LGUI A  &hrm_left LALT R  &hrm_left LCTRL S  &hrm_left LEFT_GUI T  &kp G        &kp M       &hrm_right RGUI N  &hrm_right RCTRL E  &hrm_right RALT I  &hrm_right RGUI O
+&kp X             &kp C             &kp D              &kp V                 &kp Z        &kp K       &kp H              &kp COMMA           &kp DOT            &kp FSLH
+                                    &mo 2              &lt 3 ENTER           &lt 4 SPACE  &kp C_MUTE  &mo 2              &lt 3 BACKSPACE     &kp EXCL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
